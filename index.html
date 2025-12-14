@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Portafolio Personal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.4em;
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        section {
+            background: white;
+            margin-bottom: 40px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            font-size: 1.2em;
+        }
+        .contact-info a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 15px;
+        }
+        .project-info h3 {
+            margin: 0 0 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tu Nombre Completo</h1>
+        <p>Desarrollador | Diseñador | Freelancer</p>
+        <p>¡Transformo ideas en soluciones digitales!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Sobre mí / Contacto -->
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:tuemail@gmail.com">tuemail@gmail.com</a></p>
+                <p><strong>Teléfono/WhatsApp:</strong> +54 9 11 1234-5678</p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                ¡Hola! Soy [Tu Nombre], apasionado por el desarrollo web, el diseño y la tecnología. 
+                Tengo experiencia en HTML, CSS, JavaScript, React, Node.js y más. 
+                Me encanta ayudar a personas y empresas a tener presencia profesional en internet.
+            </p>
+            <p>
+                Ofrezco servicios de creación de páginas web, tiendas online, landing pages, 
+                mantenimiento y optimización de sitios existentes.
+            </p>
+        </section>
+
+        <!-- Trabajos realizados -->
+        <section id="trabajos">
+            <h2>Mis trabajos realizados</h2>
+            <div class="projects-grid">
+                
+                <!-- Proyecto 1 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/400x200?text=Proyecto+1" alt="Proyecto 1">
+                    <div class="project-info">
+                        <h3>Tienda Online de Ropa</h3>
+                        <p>Página web completa con carrito de compras y pasarela de pago.</p>
+                        <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript, Stripe</p>
+                        <a href="https://ejemplo.com" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/400x200?text=Proyecto+2" alt="Proyecto 2">
+                    <div class="project-info">
+                        <h3>Landing Page para Curso Online</h3>
+                        <p>Diseño moderno y optimizado para conversiones.</p>
+                        <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap, Formspree</p>
+                        <a href="https://ejemplo.com" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/400x200?text=Proyecto+3" alt="Proyecto 3">
+                    <div class="project-info">
+                        <h3>Portafolio Personal para Fotógrafo</h3>
+                        <p>Galería de imágenes responsive y elegante.</p>
+                        <p><strong>Tecnologías:</strong> HTML, CSS, Lightbox JS</p>
+                        <a href="https://ejemplo.com" target="_blank">Ver proyecto →</a>
+                    </div>
+                </div>
+
+                <!-- Puedes agregar más proyectos aquí -->
+                
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
+        <p>¿Listo para trabajar juntos? Escríbeme a <a href="mailto:tuemail@gmail.com" style="color:#667eea;">tuemail@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
